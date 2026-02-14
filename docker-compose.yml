@@ -15,7 +15,6 @@ services:
       - redis
     networks:
       - app-network
-    restart: always
 
   mongo:
     image: mongo
@@ -23,13 +22,12 @@ services:
       - mongo_data:/data/db
     networks:
       - app-network
-    restart: always
+   
 
   redis:
     image: redis:alpine
     networks:
       - app-network
-    restart: always
 
   nginx:
     image: nginx:alpine
