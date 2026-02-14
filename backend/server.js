@@ -24,7 +24,7 @@ app.post("/shorten", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("URL Shortener API is running 🚀 ");
+  res.send("URL Shortener API is running 🚀 made some little change");
 });
 
 app.listen(3000, () => console.log("Server running"));
