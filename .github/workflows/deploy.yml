@@ -33,6 +33,6 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd url-shortener
+            cd url
             docker compose pull
             docker compose up -d
