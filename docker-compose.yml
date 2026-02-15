@@ -3,7 +3,7 @@ version: "3.8"
 services:
 
   backend:
-    build: doc013/url-shortener-backend:latest
+    build: ./backend
     container_name: node_app
     ports:
       - "3000:3000"
